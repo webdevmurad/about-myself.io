@@ -598,9 +598,15 @@ body {
   font-size: 30px;
   padding-top: 30px;
   color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .portfolio__block-title:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-decoration: underline;
+  color: yellow;
   cursor: pointer;
 }
 
