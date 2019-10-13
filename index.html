@@ -6,120 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-        <div class="container">
-            <div class="profile">
-                <div class="profile-photo"></div>
-                <div class="profile-info">
-                    <h2 class="heading heading-light">
-                        Profile
-                    </h2>
-                    <p class="profile-text">
-                        Добро пожаловать. Меня зовут Мурад, мне 24 года. Я junior web developer. На данной странице представлена вся информация обо мне. О себе могу рассказать вкратце.
-                        Каждый день стараюсь прогрессировать и не стоят на месте. Прошел курс обучения по JS, теперь практикой стараюсь закрепить все знания. Самое главное мой плюс, это голод новых знаний.
-                        Работаю над собой и ставлю перед собой сложные и перспективные цели.
+    <section class="head">
+        <div class="head-container">
+            <div class="head-right">
+                <div class="head-img"><img src="./img/me.jpg" alt="" ></div>
+                <div class="head-title">
+                    <h1>Profile</h1>
+                </div>
+                <div class="head-info">
+                    <p>
+                        Добро пожаловать на мою страницу. Меня зовут Мурад. Я junior front-end developer.
+                        На этом сайте расположено самая подробная информация обо мне. Каждый день я стараюсь
+                        изучать все что связано с сферой разработки, и делаю все усилия чтобы расти над собой.
+                        В данный момент практикуюсь с языком JavaScript и в дальнейшем буду изучать библиотеку React.
                     </p>
-                    <div class="contacts">
-                        <div class="contacts-item">
-                            <h3 class="contacts-title">
-                                <i class="fas fa-mobile"></i>
-                                Phone
-                            </h3>
-                            <a href="tel:+79894838329" class="contacts-text">+7(989) 483 8329</a>
-                        </div>
-                        <div class="contacts-item">
-                            <h3 class="contacts-title">
-                                <i class="fas fa-at"></i>
-                                Email
-                            </h3>
-                            <a href="mailto:murad-arslangiraev-1994@mail.ru" class="contacts-text">murad-arslangiraev-1994@mail.ru</a>
-                        </div>
-                        <div class="contacts-item">
-                            <h3 class="contacts-title">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Home
-                            </h3>
-                            <address class="contacts-text">Russia, Republic Dagestan<br> Makhackala</address>
-                        </div>
-                    </div>
-                    <h2 class="heading heading-light">Languages</h2>
-                    <div class="languages">
-                        <div class="language">
-                            <span class="language-text">English</span>
-                            <strong class="language-per">65%</strong>
-                        </div>
-                        <div class="lines">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div class="resume">
-                <div class="resume-wrap">
-                    <div class="logo">
-                        <div class="logo-lines logo-lines-left">
-                            <span class="logo-line"></span>
-                            <span class="logo-line"></span>
-                            <span class="logo-line"></span>
-                        </div>
-                        <div class="logo-img">M/S</div>
-                        <div class="logo-lines logo-lines-right">
-                            <span class="logo-line"></span>
-                            <span class="logo-line"></span>
-                            <span class="logo-line"></span>
-                        </div>
+            <div class="head-left">
+                <div class="head-box"></div>
+                <div class="head-logo">
+                    <div class="logo-img"><p>M/S</p></div>
+                </div>
+                <div class="head-name">
+                    <h2>Арслангираев Мурад</h2>
+                    <p>JUNIOR FRONT-END DEVELOPER</p>
+                </div>
+                <div class="head-education ">
+                    <div class="head-education__block">
+                        <p>В 2015 году я закончил учебу в Правовой академий г.Махачкала.</p>
+                        <span>Специализация:</span><p> Юриспруденция</p>
+                        <span>Факультет:</span><p> Юридический, (Бакалавриат)</p>
                     </div>
-                    <div class="about">
-                        <h2 class="name">Арслангираев Мурад</h2>
-                        <span class="position">Junior Web Developer</span>
-                        <address class="about-address">Russia, Republic Dagestan, Makhackala</address>
-                        <div class="about-contacts">
-                            <a class="about-contacts_link" href="#"><b>t</b>: +7(989) 483 8329</a> |
-                            <a class="about-contacts_link" href="#"><b>e</b>: murad-arslangiraev-1994@mail.ru</a>
-                        </div>
+                    <div class="head-education__block">
+                        <p>В 2017 году я закончил учебу в Средне –Волжский филиал Российской правовой академии Министерства юстиции  Российской Федерации, Саранск.</p>
+                        <span>Специализация:</span><p> Юриспруденция</p>
+                        <span>Факультет:</span><p> Юридический, (Магистратура)</p>
                     </div>
-                    <div class="experience">
-                        <h2 class="heading heading_dark">
-                            Experience
-                        </h2>
-                        <ul class="list">
-                            <li class="list-item">
-                                <h4 class="list-item_title">В поисках работы в сфере разработок</h4>
-                                <p class="list-item_text">Работал я в разных компаниях и в разных направлениях, но решил твердо найти себя в сфере разработок.
-                                Готов к переездам и неожиданным переменам. В данный момент набиваю скилл и верстаю все что попадается.</p>
-                            </li>
-                        </ul>
-                    </div>
-                   <div class="education">
-                        <h2 class="heading heading_dark">
-                            Education
-                        </h2>
-                        <ul class="list">
-                            <li class="list-item list-item_non-border">
-                                <h4 class="list-item_title">Академия верстки</h4>
-                                <p class="list-item_text">Прошел интенсивы по основам верстки сайтов и JS</p>
-                                <div class="list-item_imgs">
-                                    <img src="./img/web.png" alt="#" class="list-item_img">
-                                    <img src="./img/Js.png" alt="#" class="list-item_img">
-                                </div>
-                            </li>
-                        </ul>
-                   </div>
-                   <div class="my_portfolio">
-                        <div class="portfolio_head heading_dark">
-                            <h2 class="heading">
-                                Portfolio
-                            </h2>
-                            <a href="./sait_dop/index_sait.html"><img class="portfolio_cursor" src="./img/right-arrow.png" alt="#"></img></a>
-                        </div>
-                   </div>
-                   </div>
+                </div>
+                <div class="head-resume">
+                    <p>На начальном этапе моего развития, я занимаюсь 
+                        созданием веб-сайтов с полной адаптивностью под любые 
+                        вида устройств. Буду рад сотрудничеству.
+                    </p>
+                    <h4>Мои навыки</h4>
+                    <p>HTML5, CSS3, SASS, Flexbox, Grid, Bootstrap 4</p>
+                    <p>JavaScript, Jquery</p>
+                    <p>Npm, Gulp, Webpack, Git</p>
+                    <p>Photoshop, Figma, Avocode</p>
+                </div>
+                <div class="head-footer">
+
+                </div>
+                <div class="head-navs">
+                    <div class="head-nav"><a>- Portfolio</a></div>
+                    <div class="head-nav head-nav__contact"><a>- Contacts</a></div>
                 </div>
             </div>
         </div>
+    </section>
 </body>
 </html>
