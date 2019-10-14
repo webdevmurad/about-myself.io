@@ -145,6 +145,8 @@ html {
 }
 
 .head-nav a {
+  text-decoration: none;
+  color: black;
   font-family: Montserrat;
   font-size: 30px;
   -webkit-transition: 0.5s;
