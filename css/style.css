@@ -271,119 +271,57 @@ body {
   margin: 0;
 }
 
-.wrap {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8))), url("../img/background.png") no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.8)), url("../img/background.png") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.portfolio__title {
-  text-align: center;
-  padding-top: 40px;
-  font-size: 40px;
-  text-transform: uppercase;
-  font-family: 'Montserrat';
-  font-weight: 700;
-  color: white;
-}
-
-.portfolio__blocks {
+.portfolio-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.portfolio__block {
-  padding: 40px;
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
+.portfolio-block {
+  width: 500px;
+  padding: 20px;
+  text-align: center;
 }
 
-.portfolio__block-text {
-  margin-top: -4px;
-}
-
-.portfolio__block-title {
-  display: block;
-  text-decoration: none;
-  position: relative;
-  font-family: 'Montserrat';
-  font-size: 30px;
-  padding-top: 30px;
-  color: white;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.portfolio__block-title:hover {
-  -webkit-transition: 1s;
-  transition: 1s;
-  text-decoration: underline;
-  color: yellow;
+.portfolio-block:hover {
   cursor: pointer;
+  border: 2px solid black;
 }
 
-.portfolio__block-descr {
-  font-family: 'Montserrat';
+.portfolio-title {
+  font-size: 30px;
+  font-family: Montserrat;
+}
+
+.portfolio-block a {
+  text-decoration: none;
+  color: black;
+}
+
+.portfolio-img img {
+  width: 100%;
+  height: 400px;
+}
+
+.portfolio-block p {
   font-size: 20px;
-  padding-top: 25px;
-  color: white;
-  margin: 0;
-}
-
-.portfolio__img {
-  width: 80%;
-  height: 350px;
-}
-
-@media (max-width: 1024px) {
-  .portfolio__block {
-    padding: 20px;
-  }
-  .portfolio__block-descr {
-    font-size: 13px;
-  }
-  .portfolio__img {
-    height: 250px;
-  }
+  font-family: Montserrat;
 }
 
 @media (max-width: 768px) {
-  .portfolio__block {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
+  .portfolio-block {
+    width: 300px;
   }
-  .portfolio__block-title {
-    font-size: 20px;
-  }
-  .portfolio__img {
-    width: 80%;
-  }
-}
-
-@media (max-width: 425px) {
-  .portfolio__block {
-    -ms-flex-preferred-size: 99%;
-        flex-basis: 99%;
-  }
-}
-
-@media (max-width: 320px) {
-  .portfolio__img {
-    width: 100%;
+  .portfolio-img img {
+    height: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */
