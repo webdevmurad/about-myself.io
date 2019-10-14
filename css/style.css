@@ -271,6 +271,11 @@ body {
   margin: 0;
 }
 
+.portfolio {
+  background: url("../img/header.png");
+  background-size: cover;
+}
+
 .portfolio-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
