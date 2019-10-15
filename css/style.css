@@ -278,6 +278,21 @@ body {
   background-size: cover;
 }
 
+.portfolio-header h1 {
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.portfolio-header a {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-family: Montserrat;
+}
+
 .portfolio-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
