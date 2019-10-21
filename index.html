@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,64 +10,52 @@
     
 </head>
 <body>
-    <section class="head">
-        <div class="head-container">
-            <div class="head-right">
-                <div class="head-img"><img src="./img/me.jpg" alt="" ></div>
-                <div class="head-title">
-                    <h1>Profile</h1>
-                </div>
-                <div class="head-info">
-                    <p>
-                        Добро пожаловать на мою страницу. Меня зовут Мурад. Я junior front-end developer.
-                        На этом сайте расположено самая подробная информация обо мне. Каждый день я стараюсь
-                        изучать все что связано с сферой разработки, и делаю все усилия чтобы расти над собой.
-                        В данный момент практикуюсь с языком JavaScript и в дальнейшем буду изучать библиотеку React.
-                    </p>
-                </div>
-            </div>
-            <div class="head-left">
-                <div class="head-box"></div>
-                <div class="head-logo">
-                    <div class="logo-img"><p>M/S</p></div>
-                </div>
-                <div class="head-name">
-                    <h2>Арслангираев Мурад</h2>
-                    <p>JUNIOR FRONT-END DEVELOPER</p>
-                </div>
-                <div class="head-education ">
-                    <div class="head-education__block">
-                        <p>В 2015 году я закончил учебу в Правовой академий г.Махачкала.</p>
-                        <span>Специализация:</span><p> Юриспруденция</p>
-                        <span>Факультет:</span><p> Юридический, (Бакалавриат)</p>
-                    </div>
-                    <div class="head-education__block">
-                        <p>В 2017 году я закончил учебу в Средне –Волжский филиал Российской правовой академии Министерства юстиции  Российской Федерации, Саранск.</p>
-                        <span>Специализация:</span><p> Юриспруденция</p>
-                        <span>Факультет:</span><p> Юридический, (Магистратура)</p>
-                    </div>
-                </div>
-                <div class="head-resume">
-                    <p>На начальном этапе моего развития, я занимаюсь 
-                        созданием веб-сайтов с полной адаптивностью под любые 
-                        вида устройств. Буду рад сотрудничеству.
-                    </p>
-                    <h4>Мои навыки</h4>
-                    <p>HTML5, CSS3, SASS, Flexbox, Grid, Bootstrap 4</p>
-                    <p>JavaScript, Jquery</p>
-                    <p>Npm, Gulp, Webpack, Git</p>
-                    <p>Photoshop, Figma, Avocode</p>
-                </div>
-                <div class="head-footer">
 
+    <section class="profile">
+        <div class="container">
+            <div class="profile-block">
+                <div class="profile-block__head">
+                    <h3>Добро пожаловать</h3> 
+                    <nav class="profile-block__links">
+                        <a class="profile-block__link link-active" href="#">Профиль</a>
+                        <a class="profile-block__link" href="#">Портфолио</a>
+                        <a class="profile-block__link" href="#">Контакты</a>
+                    </nav>
+                    <div class="profile-block__burger">
+                        <span></span>
+                    </div>
                 </div>
-                <div class="head-navs">
-                    <div class="head-nav"><a href="./portfolio.html" class="portfolio-link">- Portfolio</a></div>
-                    <div class="head-nav head-nav__contact"><a href="./contacts.html" class="portfolio-link">- Contacts</a></div>
+                <div class="profile-block__main">
+                    <div class="profile-block__text">
+                        <h2>Арслангираев Мурад</h2>
+                        <p class="profile-block__dev">junior front-end developer</p>
+                        <h2>О себе:</h2>
+                        <p class="profile-block__descr">Я junior front-end developer. Занимаюсь созданием современных сайтов с полной адаптивностью, 
+                            и полноценной интерактивностью под любые устройства. Прошел два небольших курсов, "Вэб-разработчик" и "JavaScript".
+                            Постоянно развиваюсь и изучаю что-нибудь новое в сфере разработок. Буду рад взаимовыгодному сотрудничеству. Имеется огромное желание
+                            познавать и развиваться в сфере вэб-разработки. В дальнейшем планирую изучить React и писать вэб-приложения.
+                        </p>
+                        <h2>Скиллы</h2>
+                        <p class="profile-block__skill">HTML5, CSS, Sass, Flexbox, CSS Grid, Bootstrap 4</p>
+                        <p class="profile-block__skill">JavaScript, Jquery(плагины)</p>
+                        <p class="profile-block__skill">Npm, Gulp, Webpack, Git, Github, Bitbucket, Gitlab</p>
+                        <div class="profile-block__logo">
+                            <img src="./img/html-5.png" alt="#">
+                            <img src="./img/css.png" alt="#">
+                            <img src="./img/javascript (1).png" alt="#">
+                            <img src="./img/sass.png" alt="#">
+                            <img src="./img/git.png" alt="#">
+                            <img src="./img/github.png" alt="#">
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-block__footer">
+                    <p>&copy; 2019 Murad. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </section>
+
     <script src="./jquery.min.js"></script>
     <script src="./script.js"></script>
     
