@@ -1,15 +1,8 @@
 $(document).ready(function() {
-    $("body").css('display', 'none');
+    $('.portfolio-site__blocks').not(':first').hide();
+    $('.portfolio-block__subtext .portfolio-subtext').click(function() {
+        $('.portfolio-block__subtext .portfolio-subtext').removeClass('subtext-active').eq($(this).index()).addClass('subtext-active');
+        $('.portfolio-site__blocks').hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass('subtext-active');
 
-    $("body").fadeIn(2000);
-
-    $('a.portfolio-link').click(function(event){
-        event.preventDefault();
-        linkLocation = this.href;
-        $('body').fadeOut(1000, redirectPage);
-    });
-
-    function redirectPage() {
-        window.location = linkLocation;
-    }
 });

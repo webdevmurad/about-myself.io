@@ -1,48 +1,89 @@
-body 
-    margin: 0
 .portfolio
-    background: url('../img/header.png')
-    background-size: cover
-    &-header h1
-        text-align: center
-        margin: 0
-        padding-top: 30px
-        padding-bottom: 30px
-    &-header a
-        color: black
-        font-size: 30px
-        text-align: center
-        
-        text-decoration: none
-        font-family: Montserrat
-    &-blocks
-        display: flex
-        flex-wrap: wrap
-        align-items: center
-        justify-content: center
-    &-block
-        width: 500px
-        padding: 20px
-        text-align: center
-        &:hover
-            cursor: pointer
-            border: 2px solid black
-    &-title 
-        font-size: 30px
-        font-family: Montserrat
-    &-block a
-        text-decoration: none
-        color: black
-    &-img img 
-        width: 100% 
-        height: 400px
-    &-block p
-        font-size: 20px
-        font-family: Montserrat
-        
-@media (max-width: 768px)
-    .portfolio
-        &-block
-            width: 300px
-        &-img img 
-            height: 250px
+    &-block 
+        &__main 
+            padding: 0px 100px 0px 100px
+        &__wrap 
+            background-color: #eef8f6
+        &__text
+            width: 80%
+            margin: auto
+            display: flex
+            justify-content: space-around
+            padding-top: 30px
+        &__text h2 
+            color: #273650
+            font-family: "Montserrat"
+            font-size: 40px 
+            font-weight: 700
+            line-height: 25.04px 
+            letter-spacing: 1.7px
+        &__subtext 
+            display: flex
+        &__subtext p 
+            margin-right: 30px
+            color: #273650
+            font-family: "Montserrat"
+            font-size: 30px 
+            font-weight: 400
+            line-height: 25.04px 
+            letter-spacing: 1.7px
+            &:hover
+                cursor: pointer
+                border-bottom: 3px solid red
+                margin-bottom: -3px
+            &:last-child 
+                margin-right: 0px
+        &__content 
+            width: 1400px
+            margin: auto
+            padding-top: 30px
+            padding-bottom: 40px
+    &-site
+        &__block 
+            position: relative
+            margin-bottom: 20px
+            &:hover 
+                cursor: pointer
+            &:hover .portfolio-site__text
+                opacity: 1
+
+        &__text
+            opacity: 0
+            background-color: rgba(125,124,121,0.9)
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            display: flex
+            justify-content: center
+            align-items: center
+            transition: 0.5s
+        &__text a
+            margin-right: 50px
+            &:last-child 
+                margin-right: 0px
+            
+        &__blocks
+            display: flex
+            justify-content: space-around
+            flex-wrap: wrap
+            height: 600px
+            overflow: scroll
+            overflow-x: hidden
+        &__note 
+            text-align: right
+            padding-top: 20px
+        &__note p 
+            color: #273650
+            font-family: "Montserrat"
+            font-size: 15px 
+            font-weight: 400
+            line-height: 25.04px 
+            letter-spacing: 1.7px
+
+
+
+.subtext
+    &-active 
+        border-bottom: 3px solid red
+        margin-bottom: -3px
