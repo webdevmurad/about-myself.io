@@ -1,145 +1,27 @@
-.profile       
-    &-block 
-        &__head
+.profile 
+    &-reload
+        position: fixed
+        width: 64px
+        height: 64px
+        top: 5%
+        left: 5%
+        &:hover
+            cursor: pointer
+    &-block
+        padding-top: 200px
+        &__head h2 
+            font-family: "Raleway - Heavy";
+            font-size: 70px 
+        &__main
             display: flex
-            justify-content: space-around
-            align-items: center
-        &__burger
-            display: none 
-            width: 100px
-            height: 100px
-            justify-content: center
-            align-items: center
-            position: relative
-            &:hover
-                cursor: pointer
-        &__burger span 
-            display: block
-            content: ''
-            width: 30px
-            height: 4px
-            background: #000000
-            &:after
-                display: block
-                content: ''
-                position: absolute
-                width: 30px
-                height: 4px
-                background: #000000
-                margin-top: -10px
-            &:before 
-                display: block
-                content: ''
-                position: absolute
-                width: 30px
-                height: 4px
-                background: #000000
-                margin-top: 10px
-        &__head h3 
-            margin-top: 20px
-            margin-bottom: 20px
-            padding: 20px
-            border: 3px solid #273650
-            color: #273650
-            font-family: "Montserrat"
-            font-size: 30px
-            font-weight: 400
-            line-height: 25.04px
-            letter-spacing: 1.7px
-            &:hover 
-                cursor: pointer
-        &__link 
-            position: relative
-            color: #273650
-            font-family: Montserrat
-            font-size: 30px
-            font-weight: 400
-            line-height: 25.04px
-            letter-spacing: 2.75px
-            text-decoration: none
-            margin-right: 100px
-            &:after
-                content: ''
-                position: absolute
-                left: 0
-                bottom: 0
-                width: 100%
-                height: 3px
-                background: #01afb8
-                transform: scaleX(0)
-                transform-origin: left
-                transition: 250ms ease-in
-            &:hover::after 
-                transform: scaleX(1)
-                transform-origin: right
-            &:last-child 
-                margin-right: 0px
-
-        &__main 
-            padding: 0px 100px 0px 100px
-        &__text
-            text-align: center
-            background-color: #eef8f6
-        &__text h2 
-            padding-top: 50px
-            color: #273650
-            font-family: "Montserrat"
-            font-size: 40px
-            font-weight: 700
-            line-height: 25.04px
-            letter-spacing: 1.7px
-        &__dev 
-            padding-top: 30px
-            color: #273650
-            font-family: "Montserrat"
-            font-size: 40px
-            font-weight: 400
-            line-height: 25.04px
-            letter-spacing: 1.7px
-        &__descr 
-            padding: 20px 200px 0px 200px 
-            color: #273650
-            font-family: "Montserrat"
-            font-size: 30px
-            font-weight: 400
-            line-height: 30px
-            letter-spacing: 1.7px
-        &__skill
-            padding-top: 20px
-            color: #273650
-            font-family: "Montserrat"
-            font-size: 30px
-            font-weight: 400
-            line-height: 30px
-            letter-spacing: 1.7px
-        &__logo 
-            padding-top: 20px
-            padding-bottom: 20px
-        &__logo img 
-            margin-right: 30px
-            &:last-child 
-                margin-right: 0px
-            &:hover 
-                cursor: pointer
-        &__footer p 
-            padding-top: 30px
-            text-align: center
-            color: #273650
-            font-family: "Montserrat"
+        &__text 
+            font-family: 'Montserrat'
             font-size: 20px
-            font-weight: 400
             line-height: 30px
-            letter-spacing: 1.7px
-
-.show 
-    display: flex
-.hide
-    display: none
-
-.link
-    &-active
-        font-size: 40px
-        color: #01afb8
 
 
-        
+
+
+
+
+            
