@@ -27,6 +27,26 @@ html {
   cursor: pointer;
 }
 
+.profile-link__portfolio {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway - Heavy";
+  font-size: 40px;
+}
+
+.profile-link__portfolio:hover {
+  color: red;
+  cursor: pointer;
+  border-bottom: 4px solid red;
+}
+
+.profile-link__medium {
+  color: red;
+}
+
 .profile-block {
   padding-top: 200px;
 }
@@ -160,5 +180,9 @@ html {
 
 .skills-block__logs img:last-child {
   margin-right: 0px;
+}
+
+.skills-block__logs img:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
