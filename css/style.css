@@ -104,4 +104,61 @@ html {
   border-bottom: 1px solid red;
   cursor: pointer;
 }
+
+.skills-block__head {
+  padding-top: 100px;
+}
+
+.skills-block__head h2 {
+  font-family: "Raleway - Heavy";
+  font-size: 70px;
+}
+
+.skills-block__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills-block__text p {
+  margin-top: 30px;
+  font-family: 'Montserrat';
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.skills-block__logs {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-block__logs img {
+  margin-right: 30px;
+}
+
+.skills-block__logs img:last-child {
+  margin-right: 0px;
+}
 /*# sourceMappingURL=style.css.map */
