@@ -1,6 +1,7 @@
 .profile 
     &-reload
         position: fixed
+        z-index: 5
         width: 64px
         height: 64px
         top: 5%
@@ -10,6 +11,7 @@
     &-link 
         &__portfolio
             position: fixed
+            z-index: 5
             top: 5%
             right: 5%
             text-decoration: none
@@ -22,6 +24,22 @@
                 border-bottom: 4px solid red
         &__medium
             color: red
+        &__port 
+            display: none
+            padding-top: 100px
+            text-align: center
+        &__port a 
+            z-index: 5
+            top: 5%
+            right: 5%
+            text-decoration: none
+            color: black
+            font-family: "Raleway - Heavy";
+            font-size: 40px
+            &:hover
+                color: red
+                cursor: pointer
+                border-bottom: 4px solid red
 
     &-block
         padding-top: 200px
@@ -34,10 +52,55 @@
             font-family: 'Montserrat'
             font-size: 20px
             line-height: 30px
+@media (max-width: 1100px)
+    .profile 
+        &-block 
+            &__head
+                padding: 0px 50px 0px 50px
+            &__main 
+                padding: 0px 50px 0px 50px
+                flex-direction: column
+            &__img 
+                text-align: center
+@media (max-width: 768px)
+    .profile 
+        &-block 
+            &__head h2 
+                font-size: 50px
+            &__text p 
+                font-size: 15px
+            &__img img 
+                width: 400px
+                height: 450px
 
+        &-link
+            &__portfolio 
+                font-size: 30px
+@media (max-width: 576px)
+    .profile 
+        &-link 
+            &__port 
+                display: block
+            &__port a 
+                font-size: 30px
 
-
-
-
+            &__portfolio
+                display: none
+        &-reload
+            display: none
+        &-block
+            &__head h2 
+                font-size: 40px
+            &__img img 
+                width: 300px
+                height: 350px
+@media (max-width: 420px)
+    .profile 
+        &-block 
+            &__text p 
+                line-height: 20px
+            &__img img 
+                width: 250px
+                height: 300px
 
             

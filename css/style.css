@@ -15,8 +15,39 @@ html {
   margin: auto;
 }
 
+@media (max-width: 1100px) {
+  .container {
+    min-width: 900px;
+  }
+}
+
+@media (max-width: 990px) {
+  .container {
+    min-width: 730px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-width: 540px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    min-width: 300px;
+  }
+}
+
 .profile-reload {
   position: fixed;
+  z-index: 5;
   width: 64px;
   height: 64px;
   top: 5%;
@@ -29,6 +60,7 @@ html {
 
 .profile-link__portfolio {
   position: fixed;
+  z-index: 5;
   top: 5%;
   right: 5%;
   text-decoration: none;
@@ -45,6 +77,28 @@ html {
 
 .profile-link__medium {
   color: red;
+}
+
+.profile-link__port {
+  display: none;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.profile-link__port a {
+  z-index: 5;
+  top: 5%;
+  right: 5%;
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway - Heavy";
+  font-size: 40px;
+}
+
+.profile-link__port a:hover {
+  color: red;
+  cursor: pointer;
+  border-bottom: 4px solid red;
 }
 
 .profile-block {
@@ -66,6 +120,70 @@ html {
   font-family: 'Montserrat';
   font-size: 20px;
   line-height: 30px;
+}
+
+@media (max-width: 1100px) {
+  .profile-block__head {
+    padding: 0px 50px 0px 50px;
+  }
+  .profile-block__main {
+    padding: 0px 50px 0px 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profile-block__img {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-block__head h2 {
+    font-size: 50px;
+  }
+  .profile-block__text p {
+    font-size: 15px;
+  }
+  .profile-block__img img {
+    width: 400px;
+    height: 450px;
+  }
+  .profile-link__portfolio {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-link__port {
+    display: block;
+  }
+  .profile-link__port a {
+    font-size: 30px;
+  }
+  .profile-link__portfolio {
+    display: none;
+  }
+  .profile-reload {
+    display: none;
+  }
+  .profile-block__head h2 {
+    font-size: 40px;
+  }
+  .profile-block__img img {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 420px) {
+  .profile-block__text p {
+    line-height: 20px;
+  }
+  .profile-block__img img {
+    width: 250px;
+    height: 300px;
+  }
 }
 
 @font-face {
@@ -123,6 +241,68 @@ html {
   color: red;
   border-bottom: 1px solid red;
   cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .contact-block__head h2 {
+    text-align: center;
+  }
+  .contact-block__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-block__text {
+    padding-right: 0px;
+    padding: 0px 50px 0px 50px;
+  }
+  .contact-block__logs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .contact-block__logs a {
+    margin-right: 20px;
+  }
+  .contact-block__logs a:last-child {
+    margin-right: 0px;
+  }
+  .contact-block__logs img {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-block__head h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-block__logs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-block__logs a {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .contact-block__text p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-block__text p {
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
 
 .skills-block__head {
@@ -184,6 +364,42 @@ html {
 
 .skills-block__logs img:hover {
   cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .skills-block__head h2 {
+    text-align: center;
+  }
+  .skills-block__text p {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-block__head h2 {
+    font-size: 40px;
+  }
+  .skills-block__text p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-block__text p {
+    text-align: center;
+    font-size: 18px;
+    padding: 0px 50px 0px 50px;
+  }
+  .skills-block__logs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills-block__logs img {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
 }
 
 .portfolio-block {
