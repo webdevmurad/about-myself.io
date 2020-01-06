@@ -461,6 +461,13 @@ html {
   opacity: 1;
 }
 
+.portfolio-block__site a p {
+  margin-top: 10px;
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: red;
+}
+
 .portfolio-block__links {
   opacity: 0;
   width: 100%;
