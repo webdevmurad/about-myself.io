@@ -581,15 +581,24 @@ html {
 }
 
 @media (max-width: 576px) {
+  .portfolio-block {
+    padding-top: 100px;
+  }
   .portfolio-link__head {
     display: block;
   }
   .portfolio-link__header {
     display: none;
   }
+  .profile-block {
+    padding-top: 100px;
+  }
 }
 
 @media (max-width: 420px) {
+  .portfolio-block {
+    padding-top: 60px;
+  }
   .portfolio-block__links a {
     margin-right: 0px;
     m-top: 50px;
@@ -609,6 +618,18 @@ html {
   }
   .portfolio-block__features a {
     font-size: 20px;
+  }
+  .portfolio-block__main {
+    padding-top: 0px;
+  }
+  .portfolio-link__head {
+    padding-top: 50px;
+  }
+  .profile-block {
+    padding-top: 60px;
+  }
+  .profile-link__port {
+    padding-top: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
